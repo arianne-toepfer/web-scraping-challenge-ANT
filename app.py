@@ -2,6 +2,7 @@ from flask import Flask, render_template, redirect
 from flask_pymongo import PyMongo
 import scraper
 
+
 app = Flask(__name__)
 
 # Use flask_pymongo to set up mongo connection
@@ -15,10 +16,9 @@ def index():
 
 
 @app.route("/scrape")
-def scraper():
+def scrapef():
     data = mongo.db.mars
     scrap_data = scraper.scrape()
-    print(data)
     data.update({}, scrap_data, upsert=True)
     return redirect("http://localhost:5000", code=302)
 
