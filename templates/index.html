@@ -20,11 +20,35 @@
     <!-- Scraped data -->
     <div class="row" id="mars">
       <div class="col-md-12">
-        <h3 class="heading">{{mars.news_title}}</h4>
+        <h2 class="heading"><strong>Latest Mars News</strong></h2>
+        <h3 class="heading">{{mars.News_Title}}</h3>
+        <h5 class="heading">{{mars.News_Descriptor}}</h5>
       </div>
     </div>
-
+    <div class="row" id="mars_facts">
+      <div class="col-md-8">
+        <h2 class="heading"><strong>Featured Mars Image</strong></h2>
+        <img src="{{link}}" alt=" Featured Image">
+      </div>
+      <div class= "col-md-4">
+        <h5 class="heading"><strong>Mars Facts</strong></h5>
+        <table class="table table-striped">{{mars.Mars_Fact_Table}}</table>
+      </div>
+    </div>
+  <div class="row" id="mars_hemi">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <h2 class="heading"><strong>Mars Hemispheres</strong></h2>
+    </div>
   </div>
+  <div class="row" id="mars_hemi_pics">
+    <div class="col-md-12">
+      <img src="{{mars.Hemisphere_Images}}" alt=" Hemi Image">
+    </div>
+  </div>
+
+
+
 </body>
 
 </html>

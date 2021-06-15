@@ -132,7 +132,7 @@ def scrape():
     hemisphere_image_urls
 
     # %%
-    scraped_data = {"News Title":news_title, "News Descriptor": news_p, "Featured Image": link, "Mars Fact Table": html_table, "Hemisphere Images": hemisphere_image_urls} 
+    scraped_data = {"News_Title":news_title, "News_Descriptor": news_p, "Featured_Image": link, "Mars_Fact_Table": html_table, "Hemisphere_Images": hemisphere_image_urls} 
 
     # %%
     return scraped_data
