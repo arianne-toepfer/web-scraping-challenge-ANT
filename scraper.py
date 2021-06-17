@@ -86,7 +86,7 @@ def scrape():
 
     for image in image_header:
         picture = image.find('a', class_='showimg fancybox-thumbs')
-        link = picture['href']
+        link = ink = (f"https://data-class-jpl-space.s3.amazonaws.com/JPL_Space/{picture['href']}")
 
         print(link)
 
